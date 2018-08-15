@@ -1,0 +1,72 @@
+@media only screen and (max-width: 600px) {
+    .header{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas:
+                "header__logo"
+                "header__intro"
+                "header__cta"
+                ;
+    }
+    .header__intro a{
+        display: none;
+    }
+    .proses{
+        display:grid;
+        margin: 40px 0 40px 0;
+        grid-template-columns: auto;
+        grid-template-areas:
+                "pros__1"
+                "pros__2"
+                "pros__3"
+                "pros__4";
+    }
+    .blogs{
+        display:grid;
+        margin: 40px 0 40px 0;
+        grid-template-columns:auto;
+        grid-template-areas:
+                "image__border"
+                "blog__1"
+                "blog__2"
+                "blog__3"
+
+    }
+    .quotes {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+                "test "
+                "stories"
+                "dev"
+                "tab"
+                "cta";
+
+    }
+
+    .item__socials{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-areas:
+                "social1 social2"
+                "social3 social4";
+
+    }
+    .flickr_photos{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 10px;
+    }
+    .footer {
+        display: grid;
+        grid-template-columns:auto;
+
+    }
+    .footer__2 {
+        display: grid;
+        grid-template-columns: repeat(6,auto);
+    }
+    .media__item {
+        justify-content: space-evenly;
+    }
+}

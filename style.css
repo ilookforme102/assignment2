@@ -1,3 +1,5 @@
+/* general styling */
+
 * {
     margin: 0;
     padding: 0;
@@ -371,6 +373,7 @@ a {
 .tabs ul li{
     float:left;
 }
+
 .tab__link{
     display: inline-block;
     color: var(--black);
@@ -388,11 +391,12 @@ a {
 #content__2 {
     display: none;
 }
-
-.tabs .tab__content:target {
+.tab__contents:target {
     display: block;
 }
-
+.tab__content:not(:target) {
+    display: none;
+}
 .cta{
     grid-area: cta;
     position:relative;
@@ -466,6 +470,10 @@ a {
 
 }
 .btn-circle {
+    position: fixed;
+    margin-bottom: 50px;
+    bottom: 0px;
+    right: 0px;
     width: 30px;
     height: 30px;
     border-radius: 30px;
